@@ -1,0 +1,93 @@
+html{
+  scroll-behavior: smooth;
+  scroll-padding-top: 72px;
+  overflow-x: hidden;
+}
+body{
+  overflow-x: hidden;
+}
+
+.carousel-item img{
+  height: 100vh;
+  object-fit: cover;
+}
+
+.navbar-brand{
+  letter-spacing:3px;
+}
+
+#my-title{
+  letter-spacing:3px;
+  position: absolute;
+  width: 70%;
+  top: 40vh;
+  left: 0;
+  right: 0;
+  margin: auto;
+  text-align: center;
+  z-index: 100;
+  color: #fff;
+  text-shadow: 5px 3px black;
+}
+
+#title-main{
+  font-size:90px;
+  letter-spacing: 10px;
+}
+
+
+#cars-cards img{
+  height:250px;
+  object-fit: cover;
+}
+.card{
+  transition:all 0.3s;
+}
+
+.card:hover{
+transform: scale(1.02);
+}
+
+/* Alerts */
+#alert-message{
+  display: none;
+}
+
+#alert-success{
+  display: none;
+  z-index: 500;
+  margin-top: 100px;
+}
+
+#map{
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+}
+
+.partner-logo{
+  width: 110px;
+  filter: grayscale(100%);
+}
+
+@media (max-width: 1400px){
+  #title-main{
+    font-size:70px;
+  }
+}
+
+@media (max-width: 1100px){
+  #title-main{
+    font-size:50px;
+  }
+
+  #cars-cards{
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+      }
+
+  #contact{
+padding-left: 10px !important;
+padding-right: 10px !important;
+  }
+}

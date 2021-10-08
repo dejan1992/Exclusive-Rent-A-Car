@@ -1,0 +1,460 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+
+  <link href='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.css' rel='stylesheet' />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css"
+    integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+
+  <title>Exclusive RENT A CAR</title>
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-md navbar-dark bg-dark py-3 fixed-top">
+    <div class="container">
+      <a data-aos="zoom-out-down" data-aos-duration="800" href="#" class="navbar-brand"><i
+          class="fas fa-car text-warning"></i> E<span class="text-warning">x</span>clusive</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu"><span
+          class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse" id="navmenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item">
+            <a href="#home" class="nav-link ">Početna</a>
+          </li>
+          <li class="nav-item">
+            <a href="#o-nama" class="nav-link ">O nama</a>
+          </li>
+          <li class="nav-item">
+            <a href="#cars-cards" class="nav-link ">Vozila</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Site Header -->
+  <section id="home">
+    <div id="my-title">
+      <h1 data-aos="zoom-out-down" data-aos-duration="800" id="title-main">E<span class="text-warning">x</span>clusive
+      </h1>
+      <p data-aos="zoom-out-up" data-aos-duration="800" id="title-secund" class="h1">RENT A CAR <span
+          class="text-warning">BANJA LUKA</span></p>
+      <a href="#cars-cards"><button type="button" class="btn btn-lg btn-success mt-4">Ponuda Vozila <i
+            class="fas fa-caret-right"></i><i class="fas fa-caret-right"></i></button></a>
+    </div>
+    <!-- Slides -->
+    <div id="slides" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#slides" data-bs-slide-to="0" class="active" aria-current="true"
+          aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#slides" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#slides" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="img/jonathan-gallegos-zSJ5DiS9e7o-unsplash.jpg" class="d-block w-100" alt="...">
+
+          <div data-aos="zoom-out-up" data-aos-duration="800" class="carousel-caption d-none d-md-block">
+            <h4 class="mb-4 h2">Profesionalni</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/football-stadium-g040a47627_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="mb-4 h2">Tradicija preko 10 godina</h4>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="/img/dashboard-g14c3d2e6c_1280.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h4 class="mb-4 h2">Više od 7 Automobila</h4>
+          </div>
+        </div>
+      </div>
+      <button data-aos="zoom-in-right" data-aos-duration="800" class="carousel-control-prev" type="button"
+        data-bs-target="#slides" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button data-aos="zoom-in-left" data-aos-duration="800" class="carousel-control-next" type="button"
+        data-bs-target="#slides" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="o-nama" class="p-5">
+    <div class="row align-items-center justify-content-center">
+      <div data-aos="zoom-out-down" data-aos-duration="800" class="col-md-9">
+        <h1 class="text-center mb-4 ">Exclusive Rent A Car</h1>
+        <p class="lead">Višegodišnje iskustvo, zadovoljni klijenti, konstantno ulaganje, kao i profesionalna nadogradnja
+          su nam omogućili da i danas uspješno.
+          <br>
+          Exlusive Rent a Car Banja Luka se bavi iznajmljivanjem putničkih vozila po najpovoljnijim cijenama u BiH i u
+          regionu.
+          U ponudi za iznajmljivanje posjedujemo mala ekonomična vozila, vozila srednje klase, više srednje klase, kao i
+          luksuzna putnička vozila za zahtijevnije klijente.
+          <br>
+          Sva vozila se iznajmljuju sa ili bez vozača, te vršimo dostavu po dogovoru u cijeloj BiH i svim susjednim
+          zemljama. Sva vozila su kasko osigurana uz potpunu pokrivenost štete, osim onih prouzrokovanih vožnjom pod
+          dejstvom
+          alkohola ili droge.
+          <br>
+          U ponudi imamo vozila u dugoročni najam za pravna lica po vrlo pristupačnim cijenama.
+        </p>
+      </div>
+      <div data-aos="zoom-in-down" data-aos-duration="800" class="col-md-3 py-5 text-center d-none d-md-block">
+        <h2 class>OSNOVANO</h2>
+        <h2 class>2008.</h2>
+      </div>
+    </div>
+  </section>
+
+  <!-- cards -->
+  <section id="cars-cards" class="p-5 bg-dark">
+    <h2 data-aos="fade-left" data-aos-duration="800" class="text-center text-white">Vozila na raspolaganju</h2>
+    <p data-aos="fade-right" data-aos-duration="800" class="text-center text-white lead mb-5 ">Sva vozila su novijih
+      generacija,
+      opremljena najnovijom tehnologijom</p>
+    <div class="row g-4">
+
+      <!-- card 1 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="/img/bmw-gbc8f2aa39_1280.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BMW M3</h5>
+            <p class="card-text">Vozilo prima 5 putnika ukupno sa vozačem, ima 3
+              vrata i u njega stane 5 velikih kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Benzin</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2017</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 5</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: A</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 95 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+
+      <!-- card 2 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="/img/nova-skoda-fabia-1.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Škoda Fabia</h5>
+            <p class="card-text">Vozilo prima 5 putnika ukupno sa vozačem, ima 5
+              vrata i u njega stane 5 velikih kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Benzin</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2017</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 5</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: M</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 60 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+
+        <!-- card 3 -->
+        <div class="card">
+          <img src="/img/grahame-jenkins-p7tai9P7H-s-unsplash (1).jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">BMW M5</h5>
+            <p class="card-text">Vozilo prima 5 putnika ukupno sa vozačem, ima 5
+              vrata i u njega stane 5 velikih kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Benzin</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2017</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 5</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: M</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 90 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+      <div class="col-md-6 col-lg-3">
+
+        <!-- card 4 -->
+        <div class="card">
+          <img src="/img/Skoda-Octavia_RS-2.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Škoda Oktavia</h5>
+            <p class="card-text">Vozilo prima 5 putnika ukupno sa vozačem, ima 5
+              vrata i u njega stane 5 velikih kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Benzin</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2020</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 5</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: A</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 95 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+
+      <!-- card 5 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="/img/oli-woodman-fwYZ3B_QQco-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Fiat 500</h5>
+            <p class="card-text">Vozilo prima 4 putnika ukupno sa vozačem, ima 3
+              vrata i u njega stane 3 velika kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Benzin</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2011</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 4</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: M</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 50 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+
+      <!-- card 6 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="/img/campbell-3ZUsNJhi_Ik-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">porsche 911</h5>
+            <p class="card-text">Vozilo prima 2 putnika ukupno sa vozačem, ima 5
+              vrata i u njega stanu 3 velika kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Benzin</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2016</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 4</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: A</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 150 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+
+      <!-- card 7 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="/img/popescu-andrei-alexandru-KQjBXXPRsYM-unsplash.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Mercedes-benz AMG</h5>
+            <p class="card-text">Vozilo prima 5 putnika ukupno sa vozačem, ima 5
+              vrata i u njega stane 2 velika kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Dizel</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2019</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 2</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: A</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 200 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+
+      <!-- card 8 -->
+      <div class="col-md-6 col-lg-3">
+        <div class="card">
+          <img src="/img/car-g45733ed33_1280.jpg" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">Audi A3</h5>
+            <p class="card-text">Auto prima 5 putnika ukupno sa vozačem, ima 3
+              vrata i u njega stane 5 velikih kofera. Vozilo je idealno za duže relacije.</p>
+          </div>
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item"><i class="fas fa-gas-pump text-primary"></i> Gorivo: Dizel</li>
+            <li class="list-group-item"><i class="far fa-clock text-primary"></i> Godište: 2016</li>
+            <li class="list-group-item"><i class="fas fa-thermometer-three-quarters text-primary"></i> Klima</li>
+            <li class="list-group-item"><i class="fas fa-chair text-primary"></i> Sjedišta: 5</li>
+            <li class="list-group-item"><i class="fas fa-exchange-alt text-primary"></i> Transmisija: A</li>
+            <li class="list-group-item"><i class="fas fa-money-bill-wave text-primary"></i> Cijena: 75 KM</li>
+          </ul>
+          <button type="button" class="btn btn-warning fw-bold" data-bs-toggle="modal" data-bs-target="#firstModal"
+            data-bs-whatever="@mdo">Izaberi vozilo</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="p-5">
+    <div class=" container">
+      <div class="row g-4">
+        <div class="col-md">
+          <div data-aos="fade-right" data-aos-duration="800" id="map" class="d-none d-md-block"></div>
+        </div>
+        <div data-aos="fade-left" data-aos-duration="800" class="col-md">
+          <h3 class="text-center mb-4">Kontakt Informacije</h3>
+          <ul class="list-group lead">
+            <li class="list-group-item">
+              <span class="fw-bold">Adresa:</span>
+              Koste Jarića 5, 78 000 Banja Luka
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Telefon:</span>
+              +387 51 325 325
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Mobilni:</span>
+              +387 65 165 916
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Email:</span>
+              exclusivecar@gmail.com
+            </li>
+            <li class="list-group-item">
+              <span class="fw-bold">Radno vrijeme:</span>
+              8h-20h, nedjeljom ne radimo
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Partners -->
+  <section data-aos="fade-up" data-aos-duration="800" id="partners" class="p-5">
+    <div class="conta">
+      <h1 class="text-center h2 mb-4">Naši partneri</h1>
+      <div class="row g-4 align-items-center justify-content-center">
+        <div class="col-md text-center">
+          <img class="partner-logo" src="/img/bmw logo.png" alt="">
+        </div>
+        <div class="col-md text-center">
+          <img class="partner-logo" src="/img/skoda logo.png" alt="">
+        </div>
+        <div class="col-md text-center">
+          <img class="partner-logo" src="/img/Auto_Banic2_.jpg" alt="">
+        </div>
+        <div class="col-md text-center">
+          <img class="partner-logo" src="/img/milovanovic2.png" alt="">
+        </div>
+        <div class="col-md text-center">
+          <img class="partner-logo" src="/img/auto komerc1.jpg" alt="">
+        </div>
+        <div class="col-md text-center">
+          <img class="partner-logo" src="/img/praonica.jfif" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="p-5 text-center bg-dark text-light position-relative">
+    <div class="container">
+      <p class="lead mb-0">Copyright &copy; 2021 Exlusive</p>
+      <a href="#" class="position-absolute bottom-0 end-0 p-5">
+        <i class="fas fa-chevron-circle-up fa-2x text-warning"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Modal -->
+  <div data-bs-backdrop="static" class="modal fade" id="firstModal" tabindex="-1" aria-labelledby="firstModalLabel"
+    aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Alert -->
+        <div id="alert-message" class="alert alert-danger alert-dismissible fade show m-3" role="alert">
+          <strong>Provjerite unešene podatke!</strong>
+        </div>
+        <div class="modal-header">
+          <h5 class="modal-title" id="firstModalLabel">Unesite podatke, mi ćemo vam se javiti</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <form id="modal-form">
+            <div class="mb-3">
+              <label for="recipient-name" class="col-form-label">Broj telefona</label>
+              <input id="modal-phone-number" type="number" class="form-control">
+            </div>
+            <div class="mb-3">
+              <label for="message-text" class="col-form-label">Poruka:</label>
+              <textarea class="form-control" id="message-text"></textarea>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button class="btn btn-secondary" data-bs-dismiss="modal">Zatvori</button>
+          <button id="submit-car" type="submit" class="btn btn-success" data-bs-dismiss="">Pošalji poruku</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Succsses Alert -->
+  <div id="alert-success" class="alert alert-success fixed-top p-3 w-75 mx-auto" role="alert">
+    <h4 class="alert-heading">Podaci poslani!</h4>
+    <p>Hvala Vam na povjerenju. Javićemo vam se kroz par minuta na broj telefona koji ste unijeli, da dogovorimo
+      detalje
+      usluge.</p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+    crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+  <script src='https://api.mapbox.com/mapbox-gl-js/v2.3.1/mapbox-gl.js'></script>
+
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGVqYW4xOTkyIiwiYSI6ImNrdWZjeThxcDF0MmMyb21vYm9rcGN4ajMifQ.XQSDUaZhuJgRGLh7qXFx-Q';
+    var map = new mapboxgl.Map({
+      container: 'map',
+      style: 'mapbox://styles/mapbox/streets-v11',
+      center: [17.215399205161816, 44.76153826484226],
+      zoom: 18,
+    });
+
+    // Create a new marker
+    const marker = new mapboxgl.Marker({
+      color: "#FFC107",
+    }
+    )
+      .setLngLat([17.215399205161816, 44.76153826484226])
+      .addTo(map)
+      .setPopup(new mapboxgl.Popup().setHTML("<h1>Exclusive</h1>"));
+  </script>
+  <script src="app.js"></script>
+</body>
+
+</html>
