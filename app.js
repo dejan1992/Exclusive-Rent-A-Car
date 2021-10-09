@@ -34,9 +34,12 @@ submitCar.addEventListener("click", () => {
     alertSuccess.style.display = "block";
     setTimeout(() => {
       alertSuccess.style.display = "none";
-    }, 4000)
+    }, 5000)
   }
   // Reset values
   phoneNumber.value = "";
   message.value = "";
+
+  submitCar.setAttribute("data-bs-dismiss", '');
+
 })
